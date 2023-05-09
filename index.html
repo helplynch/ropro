@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,8 +69,43 @@
   			}
   			100% {
     transform: translateY(0px);
+    
+      .discord-message {
+    background-color: #36393F;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .discord-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  .discord-text {
+    display: flex;
+    flex-direction: column;
+    color: #DCDDDE;
+  }
+  
+  .discord-username {
+    font-weight: 600;
+  }
+  
+  .discord-role {
+    font-size: 12px;
+    font-weight: 500;
+    color: #72767D;
+    margin-top: 4px;
+  }
   }
 }
+
 		.download-button {
 			display: inline-block;
 			padding: 15px 30px;
@@ -94,17 +130,68 @@
         	font-size: 24px;
         	line-height: 1.5;
         	max-width: 80%;
-        	margin: 0 auto;
+        	margin: 1 auto;
     	}
         
+            .message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .username {
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      color: gold;
+      margin-right: 5px;
+      text-shadow: 0 0 10px gold;
+    }
+    
+    .role {
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      color: #b9bbbe;
+      margin-right: 5px;
+    }
+    
+    .message-text {
+      color: #dcddde;
+    }
+    
 	</style>
 </head>
 <body>
+
 	<div class="container">
 		<img src="https://cdn.discordapp.com/attachments/977959302973235200/1105277581126795284/168358910810747666.png" alt="Download Image" class="download-image">
 		<a href="https://discord.gg/Q7aZMrCcNK" class="download-button">Download Now</a>
 		<p class="white-text">We know that no one likes to pay for things, and we feel the same way. That's why we've made RoPro Premium completely free, so you can enjoy all its benefits without having to pay a monthly fee. Simply click the 'Download Now' button and join our Discord server to get started.</p>
-    <p class="white-text" style="color:red;font-weight:800;">RoPro++ Is currently in development.</p>
+    <p class="white-text" style="font-weight:800;">Credits</p>
+      <div class="message">
+    <img class="avatar" src="https://cdn.discordapp.com/avatars/908138981240221748/a_ea6187267dfcf2f7d4558832975b97d3.gif?size=512&width=0&height=0">
+    <div class="content">
+      <span class="username">SlimShady</span>
+      <span class="role">Owner</span>
+    </div>
+  </div>
+  
+        <div class="message">
+    <img class="avatar" src="https://cdn.discordapp.com/avatars/764554949362974740/a_ae86b69d541bdcc51d18c26884c9dd8b.gif?size=512&width=0&height=0">
+    <div class="content">
+      <span class="username">RusticGGG</span>
+      <span class="role">Web Designer</span>
+    </div>
+  </div>
+  
   </div>
 </body>
 </html>
