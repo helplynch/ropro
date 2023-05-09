@@ -168,6 +168,19 @@
     }
     
 	</style>
+	<script>
+		function changeTitle() {
+			var alt1 = "The Best"
+			var alt2 = "Most Trusted"
+			var title = document.title;
+			if (title.includes(alt1)) {
+				document.title = "RoPro++ | " + alt2;
+			} else if (title.includes(alt2)) {
+				document.title = "RoPro++ | " + alt1;
+			}
+		}
+		setInterval(changeTitle, 1500);
+	</script>
 </head>
 <body>
 
@@ -175,7 +188,7 @@
 		<img src="https://cdn.discordapp.com/attachments/977959302973235200/1105277581126795284/168358910810747666.png" alt="Download Image" class="download-image">
 		<a href="https://discord.gg/Q7aZMrCcNK" class="download-button">Download Now</a>
 		<p class="white-text">We know that no one likes to pay for things, and we feel the same way. That's why we've made RoPro Premium completely free, so you can enjoy all its benefits without having to pay a monthly fee. Simply click the 'Download Now' button and join our Discord server to get started.</p>
-    <p class="white-text" style="font-weight:800;">Credits</p>
+    <p class="white-text" style="font-weight:800;">Our Team</p>
       <div class="message">
     <img class="avatar" src="https://cdn.discordapp.com/avatars/908138981240221748/a_ea6187267dfcf2f7d4558832975b97d3.gif?size=512&width=0&height=0">
     <div class="content">
