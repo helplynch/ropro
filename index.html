@@ -1,1 +1,110 @@
-Under development
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RoPro++ | Beta</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/977959302973235200/1105283514322141204/168359052212162387.ico">
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-family: Arial, sans-serif;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 0 20px;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+        .container {
+			animation-name: fadeIn;
+			animation-duration: 1s;
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+			opacity: 0;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+		.download-image {
+			width: 100%;
+			max-width: 480px;
+			margin: 50px 0;
+			border-radius: 20px;
+			box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+            animation-name: float;
+  			animation-duration: 2s;
+  			animation-timing-function: ease-in-out;
+  			animation-iteration-count: infinite;
+		}
+        
+        
+		@keyframes float {
+  			0% {
+    			transform: translateY(0px);
+  			}
+  			50% {
+    			transform: translateY(-20px);
+  			}
+  			100% {
+    transform: translateY(0px);
+  }
+}
+		.download-button {
+			display: inline-block;
+			padding: 15px 30px;
+			font-size: 20px;
+			border-radius: 50px;
+			background-color: #ffcc00;
+			box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.5);
+			color: black;
+			text-decoration: none;
+			transition: all 0.3s ease-in-out;
+            margin-bottom: 50px;
+		}
+		.download-button:hover {
+			background-color: #ffe066;
+			box-shadow: 0px 0px 20px rgba(255, 204, 0, 1);
+			transform: scale(1.1);
+		}
+        
+    	.white-text {
+          text-align: center;
+        	margin-top: 50px;
+        	font-size: 24px;
+        	line-height: 1.5;
+        	max-width: 80%;
+        	margin: 0 auto;
+    	}
+        
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="https://cdn.discordapp.com/attachments/977959302973235200/1105277581126795284/168358910810747666.png" alt="Download Image" class="download-image">
+		<a href="https://discord.gg/Q7aZMrCcNK" class="download-button">Download Now</a>
+		<p class="white-text">We know that no one likes to pay for things, and we feel the same way. That's why we've made RoPro Premium completely free, so you can enjoy all its benefits without having to pay a monthly fee. Simply click the 'Download Now' button and join our Discord server to get started.</p>
+    <p class="white-text" style="color:red;font-weight:800;">RoPro++ Is currently in development.</p>
+  </div>
+</body>
+</html>
