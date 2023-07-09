@@ -1,6 +1,6 @@
--- Created by SlimShady (sh4dyy.)
--- Arcane script
+-- Arcane was created by SlimShady
 
+local Main = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local HackGui = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -16,7 +16,11 @@ local OwlBtn = Instance.new("TextButton")
 
 -- Properties
 
-Frame.Parent = game.StarterGui.Main
+Main.Name = "Main"
+Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Main
 Frame.BackgroundColor3 = Color3.new(1, 1, 1)
 Frame.BackgroundTransparency = 1
 Frame.BorderColor3 = Color3.new(0, 0, 0)
@@ -143,7 +147,9 @@ OwlBtn.TextWrapped = true
 
 -- Scripts
 
-local function IPERFEH_fake_script() -- MiscBtn.LocalScript 
+print("Arcane has been loaded!")
+print("[Arcane] " .. game.Players.LocalPlayer.DisplayName .. " has loaded ArcaneHub")
+local function WOPF_fake_script() -- MiscBtn.LocalScript 
 	local script = Instance.new('LocalScript', MiscBtn)
 
 	local miscmenu = script.Parent.Parent.MiscFrame
@@ -156,8 +162,8 @@ local function IPERFEH_fake_script() -- MiscBtn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IPERFEH_fake_script)()
-local function QHRFYXQ_fake_script() -- PlayerBtn.LocalScript 
+coroutine.wrap(WOPF_fake_script)()
+local function JSBR_fake_script() -- PlayerBtn.LocalScript 
 	local script = Instance.new('LocalScript', PlayerBtn)
 
 	function notification(txt)
@@ -173,8 +179,8 @@ local function QHRFYXQ_fake_script() -- PlayerBtn.LocalScript
 		notification("This feature is coming soon to Arcane.");
 	end)
 end
-coroutine.wrap(QHRFYXQ_fake_script)()
-local function MVGPBES_fake_script() -- EspBtn.LocalScript 
+coroutine.wrap(JSBR_fake_script)()
+local function EPZYZX_fake_script() -- EspBtn.LocalScript 
 	local script = Instance.new('LocalScript', EspBtn)
 
 	-- ESP MADE BY SH4DYY FOR ARCANE
@@ -672,8 +678,8 @@ local function MVGPBES_fake_script() -- EspBtn.LocalScript
 	
 	
 end
-coroutine.wrap(MVGPBES_fake_script)()
-local function XAYD_fake_script() -- XrayBtn.LocalScript 
+coroutine.wrap(EPZYZX_fake_script)()
+local function AAKAW_fake_script() -- XrayBtn.LocalScript 
 	local script = Instance.new('LocalScript', XrayBtn)
 
 	-- XRAY MADE BY SH4DYY FOR ARCANE
@@ -737,8 +743,8 @@ local function XAYD_fake_script() -- XrayBtn.LocalScript
 	
 	
 end
-coroutine.wrap(XAYD_fake_script)()
-local function UGSJN_fake_script() -- OwlBtn.LocalScript 
+coroutine.wrap(AAKAW_fake_script)()
+local function GNPMF_fake_script() -- OwlBtn.LocalScript 
 	local script = Instance.new('LocalScript', OwlBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -757,4 +763,4 @@ local function UGSJN_fake_script() -- OwlBtn.LocalScript
 	
 	
 end
-coroutine.wrap(UGSJN_fake_script)()
+coroutine.wrap(GNPMF_fake_script)()
