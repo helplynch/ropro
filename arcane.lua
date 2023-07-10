@@ -1,12 +1,8 @@
 --[[
 
-		SlimShady makes the weirdest but best scripts
-		Stay mad losers
+		Arcane
 
 ]]
-
-
--- Instances
 
 local Main = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -27,6 +23,14 @@ local MJumpBtn = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local HeadlessBtn = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
+local ScriptsBtn = Instance.new("TextButton")
+local ScriptsFrame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local YieldBtn = Instance.new("TextButton")
+local EspButton = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local OwlBtn_2 = Instance.new("TextButton")
+local HideShow = Instance.new("TextButton")
 
 -- Properties
 
@@ -46,18 +50,19 @@ HackGui.Parent = Frame
 HackGui.BackgroundColor3 = Color3.new(0.666667, 0.666667, 0.666667)
 HackGui.BorderColor3 = Color3.new(0, 0, 0)
 HackGui.BorderSizePixel = 0
-HackGui.Position = UDim2.new(0.029718874, 0, 0.0603174642, 0)
-HackGui.Size = UDim2.new(0, 146, 0, 124)
+HackGui.Position = UDim2.new(0.0240963846, 0, 0.0809524059, 0)
+HackGui.Size = UDim2.new(0, 146, 0, 144)
 
 TextLabel.Parent = HackGui
-TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundColor3 = Color3.new(0.666667, 0.666667, 0.666667)
 TextLabel.BackgroundTransparency = 1
 TextLabel.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 146, 0, 39)
-TextLabel.Font = Enum.Font.Jura
+TextLabel.Position = UDim2.new(0.0684931502, 0, -0.00542114675, 0)
+TextLabel.Size = UDim2.new(0, 126, 0, 35)
+TextLabel.Font = Enum.Font.GrenzeGotisch
 TextLabel.Text = "Arcane"
-TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextColor3 = Color3.new(0.470588, 0.196078, 0.2)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14
 TextLabel.TextWrapped = true
@@ -70,7 +75,7 @@ MiscBtn.BackgroundColor3 = Color3.new(1, 1, 1)
 MiscBtn.BackgroundTransparency = 0.800000011920929
 MiscBtn.BorderColor3 = Color3.new(0, 0, 0)
 MiscBtn.BorderSizePixel = 0
-MiscBtn.Position = UDim2.new(0, 0, 0.395161301, 0)
+MiscBtn.Position = UDim2.new(0, 0, 0.23588711, 0)
 MiscBtn.Size = UDim2.new(0, 146, 0, 26)
 MiscBtn.Font = Enum.Font.SourceSans
 MiscBtn.Text = "Misc"
@@ -85,7 +90,7 @@ PlayerBtn.BackgroundColor3 = Color3.new(1, 1, 1)
 PlayerBtn.BackgroundTransparency = 0.800000011920929
 PlayerBtn.BorderColor3 = Color3.new(0, 0, 0)
 PlayerBtn.BorderSizePixel = 0
-PlayerBtn.Position = UDim2.new(0, 0, 0.604838729, 0)
+PlayerBtn.Position = UDim2.new(0, 0, 0.414292157, 0)
 PlayerBtn.Size = UDim2.new(0, 146, 0, 26)
 PlayerBtn.Font = Enum.Font.SourceSans
 PlayerBtn.Text = "Player"
@@ -99,7 +104,7 @@ MiscFrame.Parent = HackGui
 MiscFrame.BackgroundColor3 = Color3.new(0.8, 0.8, 0.8)
 MiscFrame.BorderColor3 = Color3.new(0, 0, 0)
 MiscFrame.BorderSizePixel = 0
-MiscFrame.Position = UDim2.new(1.01999998, 0, 0.394999951, 0)
+MiscFrame.Position = UDim2.new(1.01999998, 0, 0.234999999, 0)
 MiscFrame.Size = UDim2.new(0, 89, 0, 97)
 MiscFrame.Visible = false
 
@@ -164,7 +169,7 @@ PlayerFrame.Parent = HackGui
 PlayerFrame.BackgroundColor3 = Color3.new(0.8, 0.8, 0.8)
 PlayerFrame.BorderColor3 = Color3.new(0, 0, 0)
 PlayerFrame.BorderSizePixel = 0
-PlayerFrame.Position = UDim2.new(1.01999998, 0, 0.605000019, 0)
+PlayerFrame.Position = UDim2.new(1.01999998, 0, 0.411000013, 0)
 PlayerFrame.Size = UDim2.new(0, 89, 0, 97)
 PlayerFrame.Visible = false
 
@@ -215,29 +220,140 @@ TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
 TextLabel_4.BackgroundTransparency = 1
 TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0, 0, 0.814516127, 0)
-TextLabel_4.Size = UDim2.new(0, 146, 0, 23)
+TextLabel_4.Position = UDim2.new(0.0410958901, 0, 0.795161307, 0)
+TextLabel_4.Size = UDim2.new(0, 134, 0, 23)
 TextLabel_4.Font = Enum.Font.Gotham
-TextLabel_4.Text = "slimshadyplays"
+TextLabel_4.Text = "Arcane|Name"
 TextLabel_4.TextColor3 = Color3.new(0.631373, 1, 0.403922)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 12
 TextLabel_4.TextWrapped = true
 
+ScriptsBtn.Name = "ScriptsBtn"
+ScriptsBtn.Parent = HackGui
+ScriptsBtn.BackgroundColor3 = Color3.new(1, 1, 1)
+ScriptsBtn.BackgroundTransparency = 0.800000011920929
+ScriptsBtn.BorderColor3 = Color3.new(0, 0, 0)
+ScriptsBtn.BorderSizePixel = 0
+ScriptsBtn.Position = UDim2.new(0, 0, 0.593999982, 0)
+ScriptsBtn.Size = UDim2.new(0, 146, 0, 26)
+ScriptsBtn.Font = Enum.Font.SourceSans
+ScriptsBtn.Text = "Scripts"
+ScriptsBtn.TextColor3 = Color3.new(0, 0, 0)
+ScriptsBtn.TextScaled = true
+ScriptsBtn.TextSize = 14
+ScriptsBtn.TextWrapped = true
+
+ScriptsFrame.Name = "ScriptsFrame"
+ScriptsFrame.Parent = HackGui
+ScriptsFrame.BackgroundColor3 = Color3.new(0.8, 0.8, 0.8)
+ScriptsFrame.BorderColor3 = Color3.new(0, 0, 0)
+ScriptsFrame.BorderSizePixel = 0
+ScriptsFrame.Position = UDim2.new(1.01999998, 0, 0.626999974, 0)
+ScriptsFrame.Size = UDim2.new(0, 89, 0, 97)
+ScriptsFrame.Visible = false
+
+UICorner_4.Parent = ScriptsFrame
+
+YieldBtn.Name = "YieldBtn"
+YieldBtn.Parent = ScriptsFrame
+YieldBtn.BackgroundColor3 = Color3.new(0.313726, 0.54902, 0.6)
+YieldBtn.BorderColor3 = Color3.new(0, 0, 0)
+YieldBtn.BorderSizePixel = 0
+YieldBtn.Position = UDim2.new(-1.7144707e-07, 0, 0.268041223, 0)
+YieldBtn.Size = UDim2.new(0, 89, 0, 20)
+YieldBtn.Font = Enum.Font.SourceSans
+YieldBtn.Text = "Inf Yield"
+YieldBtn.TextColor3 = Color3.new(0.764706, 1, 0.572549)
+YieldBtn.TextScaled = true
+YieldBtn.TextSize = 14
+YieldBtn.TextWrapped = true
+
+EspButton.Name = "EspButton"
+EspButton.Parent = ScriptsFrame
+EspButton.BackgroundColor3 = Color3.new(0.313726, 0.54902, 0.6)
+EspButton.BorderColor3 = Color3.new(0, 0, 0)
+EspButton.BorderSizePixel = 0
+EspButton.Position = UDim2.new(-1.7144707e-07, 0, 0.474226773, 0)
+EspButton.Size = UDim2.new(0, 89, 0, 20)
+EspButton.Font = Enum.Font.SourceSans
+EspButton.Text = "U-Esp"
+EspButton.TextColor3 = Color3.new(0.764706, 1, 0.572549)
+EspButton.TextScaled = true
+EspButton.TextSize = 14
+EspButton.TextWrapped = true
+
+TextLabel_5.Parent = ScriptsFrame
+TextLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(-1.7144707e-07, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 89, 0, 26)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Scripts"
+TextLabel_5.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_5.TextSize = 14
+
+OwlBtn_2.Name = "OwlBtn"
+OwlBtn_2.Parent = ScriptsFrame
+OwlBtn_2.BackgroundColor3 = Color3.new(0.313726, 0.54902, 0.6)
+OwlBtn_2.BorderColor3 = Color3.new(0, 0, 0)
+OwlBtn_2.BorderSizePixel = 0
+OwlBtn_2.Position = UDim2.new(-1.71363354e-07, 0, 0.680412352, 0)
+OwlBtn_2.Size = UDim2.new(0, 89, 0, 20)
+OwlBtn_2.Font = Enum.Font.SourceSans
+OwlBtn_2.Text = "Owl Hub"
+OwlBtn_2.TextColor3 = Color3.new(0.764706, 1, 0.572549)
+OwlBtn_2.TextScaled = true
+OwlBtn_2.TextSize = 14
+OwlBtn_2.TextWrapped = true
+
+HideShow.Name = "HideShow"
+HideShow.Parent = Frame
+HideShow.BackgroundColor3 = Color3.new(1, 0.345098, 0.890196)
+HideShow.BackgroundTransparency = 0.20000000298023224
+HideShow.BorderColor3 = Color3.new(0, 0, 0)
+HideShow.BorderSizePixel = 0
+HideShow.Position = UDim2.new(0, 0, 0.612698436, 0)
+HideShow.Size = UDim2.new(0, 106, 0, 31)
+HideShow.Font = Enum.Font.Unknown
+HideShow.Text = "Hide/Show Arcane"
+HideShow.TextColor3 = Color3.new(0, 0, 0)
+HideShow.TextScaled = true
+HideShow.TextSize = 14
+HideShow.TextWrapped = true
+
 -- Scripts
 
-function notif(txt)
-	local StarterGui = game:GetService("StarterGui")
-	StarterGui:SetCore("SendNotification",{
-		Title = "Arcane",
-		Text = txt,
-		Duration = 4
-	})
-end
-notif("Thanks for using Arcane!");
-notif("Currently logged in as " .. game.Players.LocalPlayer.DisplayName);
+local function YOHUVQG_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
 
-local function BPVIXI_fake_script() -- MiscBtn.LocalScript 
+	while true do
+		script.Parent.Transparency = 0.1
+		wait(0.02)
+		script.Parent.Transparency = 0.2
+		wait(0.02)
+		script.Parent.Transparency = 0.3
+		wait(0.02)
+		script.Parent.Transparency = 0.4
+		wait(0.02)
+		script.Parent.Transparency = 0.5
+		wait(0.02)
+		script.Parent.Transparency = 0.6
+		wait(0.02)
+		script.Parent.Transparency = 0.5
+		wait(0.02)
+		script.Parent.Transparency = 0.4
+		wait(0.02)
+		script.Parent.Transparency = 0.3
+		wait(0.02)
+		script.Parent.Transparency = 0.2
+		wait(0.02)
+	end
+end
+coroutine.wrap(YOHUVQG_fake_script)()
+local function UFRMXY_fake_script() -- MiscBtn.LocalScript 
 	local script = Instance.new('LocalScript', MiscBtn)
 
 	local miscmenu = script.Parent.Parent.MiscFrame
@@ -252,15 +368,15 @@ local function BPVIXI_fake_script() -- MiscBtn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BPVIXI_fake_script)()
-local function RDKLZ_fake_script() -- PlayerBtn.LocalScript 
+coroutine.wrap(UFRMXY_fake_script)()
+local function XADTMN_fake_script() -- PlayerBtn.LocalScript 
 	local script = Instance.new('LocalScript', PlayerBtn)
 
 	local miscmenu = script.Parent.Parent.MiscFrame
 	local playermenu = script.Parent.Parent.PlayerFrame
 	
 	script.Parent.MouseButton1Down:Connect(function()
-		if miscmenu.Visible == false then
+		if playermenu.Visible == false then
 			playermenu.Visible = true
 			miscmenu.Visible = false
 		else
@@ -268,8 +384,8 @@ local function RDKLZ_fake_script() -- PlayerBtn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RDKLZ_fake_script)()
-local function IYURLY_fake_script() -- EspBtn.LocalScript 
+coroutine.wrap(XADTMN_fake_script)()
+local function HFSBS_fake_script() -- EspBtn.LocalScript 
 	local script = Instance.new('LocalScript', EspBtn)
 
 	-- ESP MADE BY SH4DYY FOR ARCANE
@@ -767,8 +883,8 @@ local function IYURLY_fake_script() -- EspBtn.LocalScript
 	
 	
 end
-coroutine.wrap(IYURLY_fake_script)()
-local function UUEFTW_fake_script() -- XrayBtn.LocalScript 
+coroutine.wrap(HFSBS_fake_script)()
+local function QJDM_fake_script() -- XrayBtn.LocalScript 
 	local script = Instance.new('LocalScript', XrayBtn)
 
 	function notification(txt)
@@ -783,8 +899,8 @@ local function UUEFTW_fake_script() -- XrayBtn.LocalScript
 		notification("This feature is currently disabled by the developers.")
 	end)
 end
-coroutine.wrap(UUEFTW_fake_script)()
-local function JZHKTCV_fake_script() -- OwlBtn.LocalScript 
+coroutine.wrap(QJDM_fake_script)()
+local function KHXVX_fake_script() -- OwlBtn.LocalScript 
 	local script = Instance.new('LocalScript', OwlBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -803,8 +919,8 @@ local function JZHKTCV_fake_script() -- OwlBtn.LocalScript
 	
 	
 end
-coroutine.wrap(JZHKTCV_fake_script)()
-local function RUDXAG_fake_script() -- MJumpBtn.LocalScript 
+coroutine.wrap(KHXVX_fake_script)()
+local function JEER_fake_script() -- MJumpBtn.LocalScript 
 	local script = Instance.new('LocalScript', MJumpBtn)
 
 	-- MULTIJUMP BY SHADY TOO <3
@@ -899,8 +1015,8 @@ local function RUDXAG_fake_script() -- MJumpBtn.LocalScript
 	end)
 	
 end
-coroutine.wrap(RUDXAG_fake_script)()
-local function UFRYXA_fake_script() -- HeadlessBtn.LocalScript 
+coroutine.wrap(JEER_fake_script)()
+local function NQKXZ_fake_script() -- HeadlessBtn.LocalScript 
 	local script = Instance.new('LocalScript', HeadlessBtn)
 
 	local isHeadless = false
@@ -918,11 +1034,10 @@ local function UFRYXA_fake_script() -- HeadlessBtn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UFRYXA_fake_script)()
-local function TNXWEY_fake_script() -- TextLabel_4.LocalScript 
+coroutine.wrap(NQKXZ_fake_script)()
+local function OEBTNC_fake_script() -- TextLabel_4.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_4)
 
-	local isPremium = script.Parent.Parent.IsPremium.Value
 	local plr = game.Players.LocalPlayer
 	if plr.Name == "lp0nda" then
 		script.Parent.Text = game.Players.LocalPlayer.Name .. " [👑]"
@@ -930,4 +1045,144 @@ local function TNXWEY_fake_script() -- TextLabel_4.LocalScript
 		script.Parent.Text = game.Players.LocalPlayer.Name .. " [-]"
 	end
 end
-coroutine.wrap(TNXWEY_fake_script)()
+coroutine.wrap(OEBTNC_fake_script)()
+local function FWHRDZB_fake_script() -- ScriptsBtn.LocalScript 
+	local script = Instance.new('LocalScript', ScriptsBtn)
+
+	local scriptsmenu = script.Parent.Parent.ScriptsFrame
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if scriptsmenu.Visible == false then
+			scriptsmenu.Visible = true
+		else
+			scriptsmenu.Visible = false
+		end
+	end)
+end
+coroutine.wrap(FWHRDZB_fake_script)()
+local function PWQHFF_fake_script() -- YieldBtn.LocalScript 
+	local script = Instance.new('LocalScript', YieldBtn)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(PWQHFF_fake_script)()
+local function SULB_fake_script() -- EspButton.LocalScript 
+	local script = Instance.new('LocalScript', EspButton)
+
+	function notification(txt)
+		local StarterGui = game:GetService("StarterGui")
+		StarterGui:SetCore("SendNotification",{
+			Title = "Arcane",
+			Text = txt,
+			Duration = 4
+		})
+	end
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/nqyGkWvx'))()
+		notification("ESP works in most games, loading...")
+	end)
+end
+coroutine.wrap(SULB_fake_script)()
+local function BKHJIA_fake_script() -- OwlBtn_2.LocalScript 
+	local script = Instance.new('LocalScript', OwlBtn_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		notification("Owl hub is loading...")
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+	end)
+	
+	function notification(txt)
+		local StarterGui = game:GetService("StarterGui")
+		StarterGui:SetCore("SendNotification",{
+			Title = "Arcane",
+			Text = txt,
+			Duration = 4
+		})
+	end
+	
+	
+end
+coroutine.wrap(BKHJIA_fake_script)()
+local function KWXMFR_fake_script() -- HackGui.Drag 
+	local script = Instance.new('LocalScript', HackGui)
+
+	-- BY SLIMSHADY
+	
+	local UIS = game:GetService("UserInputService")
+	local dragSpeed = -math.huge
+	
+	local dragToggle = nil
+	local dragInput = nil
+	local dragStart = nil
+	local dragPos = nil
+	
+	function dragify(Frame)
+		function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        script.Parent.Position = Position
+		end
+		
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+		end)
+		
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+		end)
+		
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(KWXMFR_fake_script)()
+local function TXIIW_fake_script() -- HackGui.MainArcane 
+	local script = Instance.new('LocalScript', HackGui)
+
+	function notification(txt)
+		local StarterGui = game:GetService("StarterGui")
+		StarterGui:SetCore("SendNotification",{
+			Title = "Arcane",
+			Text = txt,
+			Duration = 4
+		})
+	end
+	
+	notification("Arcane has loaded!")
+	notification("Logged in as " .. game.Players.LocalPlayer.DisplayName .. " (" .. game.Players.LocalPlayer.Name .. ")")
+end
+coroutine.wrap(TXIIW_fake_script)()
+local function QKEDSSV_fake_script() -- HideShow.LocalScript 
+	local script = Instance.new('LocalScript', HideShow)
+
+	-- Made by SlimShady for Arcane Script Exploit
+	
+	local gui = script.Parent.Parent.HackGui
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if gui.Visible == true then
+			gui.Visible = false
+		else
+			gui.Visible = true
+		end
+	end)
+end
+coroutine.wrap(QKEDSSV_fake_script)()
