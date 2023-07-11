@@ -1,8 +1,11 @@
 --[[
 
-		Arcane
+		Made by notsh4dyy
 
 ]]
+
+
+-- The code is below idiots
 
 local Main = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -30,7 +33,19 @@ local YieldBtn = Instance.new("TextButton")
 local EspButton = Instance.new("TextButton")
 local TextLabel_5 = Instance.new("TextLabel")
 local OwlBtn_2 = Instance.new("TextButton")
+local OtherButtons = Instance.new("Frame")
 local HideShow = Instance.new("TextButton")
+local KeySystem = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
 -- Properties
 
@@ -52,6 +67,7 @@ HackGui.BorderColor3 = Color3.new(0, 0, 0)
 HackGui.BorderSizePixel = 0
 HackGui.Position = UDim2.new(0.0240963846, 0, 0.0809524059, 0)
 HackGui.Size = UDim2.new(0, 146, 0, 144)
+HackGui.Visible = false
 
 TextLabel.Parent = HackGui
 TextLabel.BackgroundColor3 = Color3.new(0.666667, 0.666667, 0.666667)
@@ -223,7 +239,7 @@ TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(0.0410958901, 0, 0.795161307, 0)
 TextLabel_4.Size = UDim2.new(0, 134, 0, 23)
 TextLabel_4.Font = Enum.Font.Gotham
-TextLabel_4.Text = "Arcane|Name"
+TextLabel_4.Text = "Player [-]"
 TextLabel_4.TextColor3 = Color3.new(0.631373, 1, 0.403922)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 12
@@ -309,8 +325,17 @@ OwlBtn_2.TextScaled = true
 OwlBtn_2.TextSize = 14
 OwlBtn_2.TextWrapped = true
 
+OtherButtons.Name = "OtherButtons"
+OtherButtons.Parent = Frame
+OtherButtons.BackgroundColor3 = Color3.new(1, 1, 1)
+OtherButtons.BackgroundTransparency = 1
+OtherButtons.BorderColor3 = Color3.new(0, 0, 0)
+OtherButtons.BorderSizePixel = 0
+OtherButtons.Size = UDim2.new(0, 968, 0, 630)
+OtherButtons.Visible = false
+
 HideShow.Name = "HideShow"
-HideShow.Parent = Frame
+HideShow.Parent = OtherButtons
 HideShow.BackgroundColor3 = Color3.new(1, 0.345098, 0.890196)
 HideShow.BackgroundTransparency = 0.20000000298023224
 HideShow.BorderColor3 = Color3.new(0, 0, 0)
@@ -324,9 +349,111 @@ HideShow.TextScaled = true
 HideShow.TextSize = 14
 HideShow.TextWrapped = true
 
+KeySystem.Name = "KeySystem"
+KeySystem.Parent = Frame
+KeySystem.BackgroundColor3 = Color3.new(1, 1, 1)
+KeySystem.BackgroundTransparency = 1
+KeySystem.BorderColor3 = Color3.new(0, 0, 0)
+KeySystem.BorderSizePixel = 0
+KeySystem.Size = UDim2.new(0, 968, 0, 630)
+
+Frame_2.Parent = KeySystem
+Frame_2.BackgroundColor3 = Color3.new(0.541176, 0.541176, 0.541176)
+Frame_2.BorderColor3 = Color3.new(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0299586784, 0, 0.332158715, 0)
+Frame_2.Size = UDim2.new(0, 361, 0, 51)
+Frame_2.ZIndex = 2
+
+UICorner_5.Parent = Frame_2
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Frame_2
+MainFrame.BackgroundColor3 = Color3.new(0.32549, 0.32549, 0.32549)
+MainFrame.BorderColor3 = Color3.new(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(-0.00121620297, 0, 0.422222555, 0)
+MainFrame.Size = UDim2.new(0, 361, 0, 205)
+
+TextLabel_6.Parent = MainFrame
+TextLabel_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0277008303, 0, 0.0341463424, 0)
+TextLabel_6.Size = UDim2.new(0, 340, 0, 30)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Logged in as: Player"
+TextLabel_6.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14
+TextLabel_6.TextWrapped = true
+
+Frame_3.Parent = MainFrame
+Frame_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_3.BackgroundTransparency = 1
+Frame_3.BorderColor3 = Color3.new(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.207756236, 0, 0.248780489, 0)
+Frame_3.Size = UDim2.new(0, 209, 0, 82)
+
+TextBox.Parent = Frame_3
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.BorderColor3 = Color3.new(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0161168613, 0, 0.175609693, 0)
+TextBox.Size = UDim2.new(0, 118, 0, 29)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Key here"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.new(0, 0, 0)
+TextBox.TextSize = 14
+
+TextButton.Parent = Frame_3
+TextButton.BackgroundColor3 = Color3.new(0.784314, 0.784314, 0.784314)
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.578947365, 0, 0.175610051, 0)
+TextButton.Size = UDim2.new(0, 86, 0, 29)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Submit"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextSize = 14
+
+TextLabel_7.Parent = Frame_2
+TextLabel_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0166204982, 0, 2.99191953e-07, 0)
+TextLabel_7.Size = UDim2.new(0, 354, 0, 21)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Arcane - Key System"
+TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14
+TextLabel_7.TextWrapped = true
+TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_2.Parent = Frame_2
+TextButton_2.BackgroundColor3 = Color3.new(1, 0.0823529, 0.0980392)
+TextButton_2.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.939999998, 0, 0.0250000004, 0)
+TextButton_2.Size = UDim2.new(0, 19, 0, 18)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14
+TextButton_2.TextWrapped = true
+
+UICorner_6.Parent = TextButton_2
+UICorner_6.CornerRadius = UDim.new(0, 6)
+
 -- Scripts
 
-local function YOHUVQG_fake_script() -- TextLabel.LocalScript 
+local function SFIT_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	while true do
@@ -352,13 +479,13 @@ local function YOHUVQG_fake_script() -- TextLabel.LocalScript
 		wait(0.02)
 	end
 end
-coroutine.wrap(YOHUVQG_fake_script)()
-local function UFRMXY_fake_script() -- MiscBtn.LocalScript 
+coroutine.wrap(SFIT_fake_script)()
+local function IJMLRBU_fake_script() -- MiscBtn.LocalScript 
 	local script = Instance.new('LocalScript', MiscBtn)
 
 	local miscmenu = script.Parent.Parent.MiscFrame
 	local playermenu = script.Parent.Parent.PlayerFrame
-	
+
 	script.Parent.MouseButton1Down:Connect(function()
 		if miscmenu.Visible == false then
 			miscmenu.Visible = true
@@ -368,13 +495,13 @@ local function UFRMXY_fake_script() -- MiscBtn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(UFRMXY_fake_script)()
-local function XADTMN_fake_script() -- PlayerBtn.LocalScript 
+coroutine.wrap(IJMLRBU_fake_script)()
+local function ASGY_fake_script() -- PlayerBtn.LocalScript 
 	local script = Instance.new('LocalScript', PlayerBtn)
 
 	local miscmenu = script.Parent.Parent.MiscFrame
 	local playermenu = script.Parent.Parent.PlayerFrame
-	
+
 	script.Parent.MouseButton1Down:Connect(function()
 		if playermenu.Visible == false then
 			playermenu.Visible = true
@@ -384,16 +511,16 @@ local function XADTMN_fake_script() -- PlayerBtn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XADTMN_fake_script)()
-local function HFSBS_fake_script() -- EspBtn.LocalScript 
+coroutine.wrap(ASGY_fake_script)()
+local function XMLA_fake_script() -- EspBtn.LocalScript 
 	local script = Instance.new('LocalScript', EspBtn)
 
 	-- ESP MADE BY SH4DYY FOR ARCANE
-	
+
 	local Plrs = game:GetService('Players')
 	local MyPlr = Plrs.LocalPlayer
 	local ESPStatus = false
-	
+
 	script.Parent.MouseButton1Down:Connect(function()
 		ESPStatus = not ESPStatus
 		repeat
@@ -407,7 +534,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 		repeat
 			RunS.RenderStepped:wait()
 		until C.ViewportSize.X > 0 and C.ViewportSize.Y > 0
-	
+
 		-- EDIT BELOW --
 		local Settings = {
 			KeyCodeToToggle = 285, -- Not done. (Doesn't work)
@@ -441,7 +568,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 		local ESPO = Settings.ESPOptions
 		local PESPC = Settings.PlayerESPCrap
 		local PC = Settings.PlayerCrap
-	
+
 		local DONT_IGNORE = {
 			"Head",
 			"Torso",
@@ -451,17 +578,17 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 			"Left Leg",
 			"Right Leg",
 		}
-	
+
 		function CheckNameToDontIgnore(Str)
 			for i, v in pairs(DONT_IGNORE) do
 				if (Str == v) then
 					return true
 				end
 			end
-	
+
 			return false
 		end
-	
+
 		local Called = 0
 		function AddShitToIgnoreList(Par)
 			Called = Called + 1
@@ -483,7 +610,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 					end
 				end
 			end
-	
+
 			local function Scan(Par)
 				for i, v in pairs(Par:GetChildren()) do
 					if not (Plrs:FindFirstChild(v.Name)) then
@@ -497,10 +624,10 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 			end
 			Scan(Par)
 		end
-	
+
 		function RecursiveGetChildren(Par)
 			local returnValue = {}
-	
+
 			local rgc
 			rgc = function(Par)
 				for i, c in next, Par:GetChildren() do
@@ -508,12 +635,12 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 					rgc(c)
 				end
 			end
-	
+
 			rgc(Par)
-	
+
 			return returnValue
 		end
-	
+
 		function CheckCameraForPlrModel(Plr)
 			local Find = C:FindFirstChild("ESPStuff " .. Plr.Name)
 			if (Find) then
@@ -537,7 +664,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 			ESP.Name = "ESP Stuff"
 			return mod
 		end
-	
+
 		function UpdateTracerCrap(What, Plr)
 			if ((MyPlr.Character ~= nil and Plr.Character ~= nil) and (MyPlr.Character.PrimaryPart ~= nil and Plr.Character.PrimaryPart ~= nil)) then
 				if ((MyPlr.Character.PrimaryPart.Position - Plr.Character.PrimaryPart.Position).magnitude < 2000) then
@@ -566,8 +693,8 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 				end
 			end
 		end
-	
-	
+
+
 		local Aim = 1
 		function UpdateESPGui(HealthBar, HealthTxt, Plr, DistTxt, PlrName)
 			if (Plr.Character == nil) then
@@ -597,39 +724,39 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 				) or #Teams:GetChildren() <= 0 and CC.Enemy
 			)
 		end
-	
+
 		function UpdateESPCrap(What, Plr)
 			if ((MyPlr.Character ~= nil and Plr.Character ~= nil) and (MyPlr.Character.PrimaryPart ~= nil and Plr.Character.PrimaryPart ~= nil)) then
 				if ((MyPlr.Character.PrimaryPart.Position - Plr.Character.PrimaryPart.Position).magnitude < 2000) then
 					if (PC[Plr] ~= nil) then
 						local viewpoint = C.CoordinateFrame
-	
+
 						local PDists = {}
 						for i, p in next, PC[Plr] do
 							table.insert(PDists, (viewpoint.p - i.Position).magnitude)
 						end
-	
+
 						local nearestDistance = math.min(unpack(PDists))
 						local furthestDistance = math.max(unpack(PDists))
-	
+
 						for i, p in next, PC[Plr] do
 							local O, M, S = unpack(p)
-	
-	
+
+
 							local Dist = (i.Position - viewpoint.p).magnitude
 							local DistMult = Aim + (Dist - nearestDistance) / (furthestDistance - nearestDistance)
-	
+
 							O.Transparency = math.max(S + (i.Transparency * (1 - S)), 0.001)
-	
+
 							local unit = (i.Position - viewpoint.p).unit * DistMult
 							local pos = viewpoint.p + unit
-	
+
 							local OF = CFrame.new(pos) * CFrame.Angles(i.CFrame:toEulerAnglesXYZ())
-	
+
 							O.CFrame = OF
-	
+
 							local OS = DistMult / Dist
-	
+
 							if (M == nil) then
 								O.Mesh.Scale = i.Size * OS
 							else
@@ -639,7 +766,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 									O[M.Name].Scale = M.Scale * i.Size * OS
 								end
 							end
-	
+
 							O.BrickColor = BrickColor.new(
 								#Teams:GetChildren() > 0 and (
 								Plr.TeamColor == MyPlr.TeamColor and CC.Ally or
@@ -647,7 +774,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 								) or #Teams:GetChildren() <= 0 and CC.Enemy
 							)
 						end
-	
+
 						--print("Running")
 						local Mouse = MyPlr:GetMouse()
 						local R = Ray.new(Mouse.UnitRay.Origin, Mouse.UnitRay.Direction * 5000)
@@ -667,7 +794,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 				end
 			end
 		end
-	
+
 		function CreateESPStuff(Plr)
 			local ESPModel = CheckCameraForPlrModel(Plr)
 			PESPC[Plr] = ESPModel
@@ -712,58 +839,58 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 						O.BackSurface = "SmoothNoOutlines"
 						O.LeftSurface = "SmoothNoOutlines"
 						O.RightSurface = "SmoothNoOutlines"
-	
+
 						local P = nil
 						local PMesh = nil
 						for ii, vv in next, RecursiveGetChildren(v) do
 							if (vv:IsA("DataModelMesh")) then
 								local ThisPMesh = vv:clone()
-	
+
 								local meshChanged = vv.Changed:connect(function(Prop)
 									if (Prop == "MeshType" or Prop == "MeshId" or Prop == "TextureProp") then
 										ThisPMesh[Prop] = vv[Prop]
 									end
 								end)
-	
+
 								PMesh = ThisPMesh
 							elseif (vv:IsA("FaceInstance")) then
 								vv:clone().Parent = O
 							end
 						end
-	
+
 						if (PMesh == nil) then
 							local M = Instance.new("BlockMesh", O)
 						else
 							PMesh:clone().Parent = O
 						end
-	
+
 						if (O.Name == "Fake Head") then
 							local Info = Instance.new("BillboardGui", O.Mesh)
 							Info.Name = "ESPStats"
 							Info.Adornee = O
 							Info.Size = UDim2.new(0, 100, 0, 75)
 							Info.ExtentsOffset = Vector3.new(0, 0.3, 0)
-	
+
 							local Stats = Instance.new("Frame", Info)
 							Stats.BackgroundTransparency = 1
 							Stats.Name = "Stats"
 							Stats.Size = UDim2.new(1, 0, 1, 0)
 							Stats.Visible = false
-	
+
 							local Health = Instance.new("Frame", Stats)
 							Health.Name = "HealthBG"
 							Health.BackgroundColor3 = Color3.new(0, 0, 0)
 							Health.BorderSizePixel = 0
 							Health.Position = UDim2.new(0, 0, 0, 25)
 							Health.Size = UDim2.new(1, 0, 0, 25)
-	
+
 							local HealthBG = Instance.new("Frame", Health)
 							HealthBG.Name = "Health"
 							HealthBG.BackgroundColor3 = Color3.new(0, 1, 0)
 							HealthBG.BorderSizePixel = 0
 							HealthBG.Position = UDim2.new(0, 1, 0, 1)
 							HealthBG.Size = UDim2.new(1, -2, 1, -2)
-	
+
 							local HealthNum = Instance.new("TextLabel", Health)
 							HealthNum.Name = "HealthNum"
 							HealthNum.BackgroundTransparency = 1
@@ -772,7 +899,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 							HealthNum.FontSize = "Size8"
 							HealthNum.Text = "???"
 							HealthNum.TextColor3 = Color3.new(1, 0, 0)
-	
+
 							local PlrName = Instance.new("TextLabel", Stats)
 							PlrName.Name = "PlrName"
 							PlrName.BackgroundTransparency = 1
@@ -786,7 +913,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 									Plr.TeamColor ~= MyPlr.TeamColor and CC.Enemy
 								) or #Teams:GetChildren() <= 0 and CC.Enemy
 							)
-	
+
 							local PlrDist = PlrName:clone()
 							PlrDist.Parent = PlrName.Parent
 							PlrDist.Name = "Dist"
@@ -802,7 +929,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 								UpdateESPGui(HealthBG, HealthNum, Plr, PlrDist, PlrName)
 							end)
 						end
-	
+
 						if (PC[Plr] == nil) then
 							PC[Plr] = {}
 						end
@@ -816,7 +943,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 				end)
 			end
 		end
-	
+
 		function RemoveESP(Plr)
 			RunS:UnbindFromRenderStep("UpdateESP " .. Plr.Name)
 			RunS:UnbindFromRenderStep("UpdateESPGui " .. Plr.Name)
@@ -829,20 +956,20 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 			end
 			PC[Plr] = {}
 		end
-	
+
 		function OnCharacterAdded(Char, Plr)
 			RemoveESP(Plr)
 			CreateESPStuff(Plr)
 			-- Added shit to ingore list
 		end
-	
+
 		function OnPlayerAdded(Plr)
 			CreateESPStuff(Plr)
 			Plr.CharacterAdded:connect(function(Char)
 				OnCharacterAdded(Char, Plr)
 			end)
 		end
-	
+
 		function OnPlayerRemoved(Plr)
 			RunS:UnbindFromRenderStep("TracerUpdate " .. Plr.Name)
 			RunS:UnbindFromRenderStep("UpdateESP " .. Plr.Name)
@@ -852,7 +979,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 				Find:Destroy()
 			end
 		end
-	
+
 		function GetCurrentPlayers()
 			for i, v in pairs(Plrs:GetPlayers()) do
 				if (v ~= MyPlr) then
@@ -863,7 +990,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 				end
 			end
 		end
-	
+
 		print("Please wait....")
 		wait(0.5)
 		AddShitToIgnoreList(workspace)
@@ -871,7 +998,7 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 		Plrs.PlayerAdded:connect(OnPlayerAdded)
 		Plrs.PlayerRemoving:connect(OnPlayerRemoved)
 	end)
-	
+
 	function notification(txt)
 		local StarterGui = game:GetService("StarterGui")
 		StarterGui:SetCore("SendNotification",{
@@ -880,11 +1007,11 @@ local function HFSBS_fake_script() -- EspBtn.LocalScript
 			Duration = 4
 		})
 	end
-	
-	
+
+
 end
-coroutine.wrap(HFSBS_fake_script)()
-local function QJDM_fake_script() -- XrayBtn.LocalScript 
+coroutine.wrap(XMLA_fake_script)()
+local function LVFDE_fake_script() -- XrayBtn.LocalScript 
 	local script = Instance.new('LocalScript', XrayBtn)
 
 	function notification(txt)
@@ -899,15 +1026,15 @@ local function QJDM_fake_script() -- XrayBtn.LocalScript
 		notification("This feature is currently disabled by the developers.")
 	end)
 end
-coroutine.wrap(QJDM_fake_script)()
-local function KHXVX_fake_script() -- OwlBtn.LocalScript 
+coroutine.wrap(LVFDE_fake_script)()
+local function KHHD_fake_script() -- OwlBtn.LocalScript 
 	local script = Instance.new('LocalScript', OwlBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		notification("Owl hub is loading...")
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end)
-	
+
 	function notification(txt)
 		local StarterGui = game:GetService("StarterGui")
 		StarterGui:SetCore("SendNotification",{
@@ -916,17 +1043,17 @@ local function KHXVX_fake_script() -- OwlBtn.LocalScript
 			Duration = 4
 		})
 	end
-	
-	
+
+
 end
-coroutine.wrap(KHXVX_fake_script)()
-local function JEER_fake_script() -- MJumpBtn.LocalScript 
+coroutine.wrap(KHHD_fake_script)()
+local function NCMEF_fake_script() -- MJumpBtn.LocalScript 
 	local script = Instance.new('LocalScript', MJumpBtn)
 
 	-- MULTIJUMP BY SHADY TOO <3
-	
+
 	local flying = false
-	
+
 	script.Parent.MouseButton1Down:Connect(function()
 		repeat wait() 
 		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
@@ -940,7 +1067,7 @@ local function JEER_fake_script() -- MJumpBtn.LocalScript
 		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
 		local maxspeed = 400 
 		local speed = 5000 
-	
+
 		function Fly() 
 			local bg = Instance.new("BodyGyro", torso) 
 			bg.P = 9e4 
@@ -1006,22 +1133,22 @@ local function JEER_fake_script() -- MJumpBtn.LocalScript
 				ctrl.r = 0 
 			end 
 		end)
-		
+
 		if flying == false then
 			flying = true
 		else
 			flying = false
 		end
 	end)
-	
+
 end
-coroutine.wrap(JEER_fake_script)()
-local function NQKXZ_fake_script() -- HeadlessBtn.LocalScript 
+coroutine.wrap(NCMEF_fake_script)()
+local function NNCSKX_fake_script() -- HeadlessBtn.LocalScript 
 	local script = Instance.new('LocalScript', HeadlessBtn)
 
 	local isHeadless = false
 	local player = game.Players.LocalPlayer
-	
+
 	script.Parent.MouseButton1Down:Connect(function()
 		if isHeadless == false then
 			player.Character.Head.Transparency = 1
@@ -1034,8 +1161,8 @@ local function NQKXZ_fake_script() -- HeadlessBtn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NQKXZ_fake_script)()
-local function OEBTNC_fake_script() -- TextLabel_4.LocalScript 
+coroutine.wrap(NNCSKX_fake_script)()
+local function EJHVZTB_fake_script() -- TextLabel_4.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_4)
 
 	local plr = game.Players.LocalPlayer
@@ -1045,12 +1172,12 @@ local function OEBTNC_fake_script() -- TextLabel_4.LocalScript
 		script.Parent.Text = game.Players.LocalPlayer.Name .. " [-]"
 	end
 end
-coroutine.wrap(OEBTNC_fake_script)()
-local function FWHRDZB_fake_script() -- ScriptsBtn.LocalScript 
+coroutine.wrap(EJHVZTB_fake_script)()
+local function DVOGUSO_fake_script() -- ScriptsBtn.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsBtn)
 
 	local scriptsmenu = script.Parent.Parent.ScriptsFrame
-	
+
 	script.Parent.MouseButton1Down:Connect(function()
 		if scriptsmenu.Visible == false then
 			scriptsmenu.Visible = true
@@ -1059,16 +1186,16 @@ local function FWHRDZB_fake_script() -- ScriptsBtn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FWHRDZB_fake_script)()
-local function PWQHFF_fake_script() -- YieldBtn.LocalScript 
+coroutine.wrap(DVOGUSO_fake_script)()
+local function JTUOY_fake_script() -- YieldBtn.LocalScript 
 	local script = Instance.new('LocalScript', YieldBtn)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(PWQHFF_fake_script)()
-local function SULB_fake_script() -- EspButton.LocalScript 
+coroutine.wrap(JTUOY_fake_script)()
+local function EGKLRPR_fake_script() -- EspButton.LocalScript 
 	local script = Instance.new('LocalScript', EspButton)
 
 	function notification(txt)
@@ -1084,15 +1211,15 @@ local function SULB_fake_script() -- EspButton.LocalScript
 		notification("ESP works in most games, loading...")
 	end)
 end
-coroutine.wrap(SULB_fake_script)()
-local function BKHJIA_fake_script() -- OwlBtn_2.LocalScript 
+coroutine.wrap(EGKLRPR_fake_script)()
+local function LFYF_fake_script() -- OwlBtn_2.LocalScript 
 	local script = Instance.new('LocalScript', OwlBtn_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		notification("Owl hub is loading...")
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end)
-	
+
 	function notification(txt)
 		local StarterGui = game:GetService("StarterGui")
 		StarterGui:SetCore("SendNotification",{
@@ -1101,60 +1228,60 @@ local function BKHJIA_fake_script() -- OwlBtn_2.LocalScript
 			Duration = 4
 		})
 	end
-	
-	
+
+
 end
-coroutine.wrap(BKHJIA_fake_script)()
-local function KWXMFR_fake_script() -- HackGui.Drag 
+coroutine.wrap(LFYF_fake_script)()
+local function SIQBHLC_fake_script() -- HackGui.Drag 
 	local script = Instance.new('LocalScript', HackGui)
 
 	-- BY SLIMSHADY
-	
+
 	local UIS = game:GetService("UserInputService")
 	local dragSpeed = -math.huge
-	
+
 	local dragToggle = nil
 	local dragInput = nil
 	local dragStart = nil
 	local dragPos = nil
-	
+
 	function dragify(Frame)
 		function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        script.Parent.Position = Position
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			script.Parent.Position = Position
 		end
-		
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
+
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
 		end)
-		
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
+
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
 		end)
-		
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
+
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
 	end
-	
+
 	dragify(script.Parent)
 end
-coroutine.wrap(KWXMFR_fake_script)()
-local function TXIIW_fake_script() -- HackGui.MainArcane 
+coroutine.wrap(SIQBHLC_fake_script)()
+local function GRVAF_fake_script() -- HackGui.MainArcane 
 	local script = Instance.new('LocalScript', HackGui)
 
 	function notification(txt)
@@ -1165,18 +1292,18 @@ local function TXIIW_fake_script() -- HackGui.MainArcane
 			Duration = 4
 		})
 	end
-	
+
 	notification("Arcane has loaded!")
 	notification("Logged in as " .. game.Players.LocalPlayer.DisplayName .. " (" .. game.Players.LocalPlayer.Name .. ")")
 end
-coroutine.wrap(TXIIW_fake_script)()
-local function QKEDSSV_fake_script() -- HideShow.LocalScript 
+coroutine.wrap(GRVAF_fake_script)()
+local function FAGSHWD_fake_script() -- HideShow.LocalScript 
 	local script = Instance.new('LocalScript', HideShow)
 
 	-- Made by SlimShady for Arcane Script Exploit
-	
-	local gui = script.Parent.Parent.HackGui
-	
+
+	local gui = script.Parent.Parent.Parent.HackGui
+
 	script.Parent.MouseButton1Down:Connect(function()
 		if gui.Visible == true then
 			gui.Visible = false
@@ -1185,4 +1312,48 @@ local function QKEDSSV_fake_script() -- HideShow.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QKEDSSV_fake_script)()
+coroutine.wrap(FAGSHWD_fake_script)()
+local function OBDC_fake_script() -- TextLabel_6.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_6)
+
+	script.Parent.Text = "Logged in as " .. game.Players.LocalPlayer.DisplayName
+end
+coroutine.wrap(OBDC_fake_script)()
+local function UQFOR_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local inp = script.Parent.Parent.TextBox
+		if inp.Text == "NewArcane" then
+			notification("Thanks for using Arcane!")
+			notification("Loading script...")
+			correct();
+		else
+			notification("Key is incorrect!")
+		end
+	end)
+
+	function notification(txt)
+		local StarterGui = game:GetService("StarterGui")
+		StarterGui:SetCore("SendNotification",{
+			Title = "Arcane",
+			Text = txt,
+			Duration = 4
+		})
+	end
+
+	function correct()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.KeySystem.Visible = false
+		script.Parent.Parent.Parent.Parent.Parent.Parent.HackGui.Visible = true
+		script.Parent.Parent.Parent.Parent.Parent.Parent.OtherButtons.Visible = true
+	end
+end
+coroutine.wrap(UQFOR_fake_script)()
+local function WVFBYS_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.KeySystem.Visible = false
+	end)
+end
+coroutine.wrap(WVFBYS_fake_script)()
