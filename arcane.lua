@@ -1,7 +1,6 @@
 --[[
 
-		Arcane V2 by SlimShady
-		Thanks for using Arcane!
+		SlimShady on that gui
 
 ]]
 
@@ -27,6 +26,7 @@ local UICorner_3 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local UIListLayout_2 = Instance.new("UIListLayout")
 local Godmode = Instance.new("TextButton")
+local Headless = Instance.new("TextButton")
 local Visible = Instance.new("Frame")
 local OtherCredits = Instance.new("Frame")
 local ArcaneLogo = Instance.new("ImageLabel")
@@ -42,7 +42,7 @@ V2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Script.Name = "Script"
 Script.Parent = V2
 Script.BackgroundColor3 = Color3.new(0, 0, 0)
-Script.BackgroundTransparency = 0.550000011920929
+Script.BackgroundTransparency = 1
 Script.BorderColor3 = Color3.new(0, 0, 0)
 Script.BorderSizePixel = 0
 Script.Position = UDim2.new(0, 0, -0.060317561, 0)
@@ -101,8 +101,8 @@ ScriptHub.Parent = InnerFrame
 ScriptHub.BackgroundColor3 = Color3.new(0.407843, 0.407843, 0.407843)
 ScriptHub.BorderColor3 = Color3.new(0, 0, 0)
 ScriptHub.BorderSizePixel = 0
-ScriptHub.Position = UDim2.new(0.112269461, 0, 0.0492063463, 0)
-ScriptHub.Size = UDim2.new(0, 136, 0, 244)
+ScriptHub.Position = UDim2.new(0.112269461, 0, 0.04920635, 0)
+ScriptHub.Size = UDim2.new(0, 136, 0, 149)
 
 UICorner_2.Parent = ScriptHub
 
@@ -170,8 +170,8 @@ Player.Parent = InnerFrame
 Player.BackgroundColor3 = Color3.new(0.407843, 0.407843, 0.407843)
 Player.BorderColor3 = Color3.new(0, 0, 0)
 Player.BorderSizePixel = 0
-Player.Position = UDim2.new(0.242983162, 0, 0.0492063537, 0)
-Player.Size = UDim2.new(0, 136, 0, 244)
+Player.Position = UDim2.new(0.243785083, 0, 0.0492063425, 0)
+Player.Size = UDim2.new(0, 136, 0, 117)
 
 UICorner_3.Parent = Player
 
@@ -205,6 +205,20 @@ Godmode.TextColor3 = Color3.new(0.117647, 0.631373, 0.815686)
 Godmode.TextScaled = true
 Godmode.TextSize = 14
 Godmode.TextWrapped = true
+
+Headless.Name = "Headless"
+Headless.Parent = Player
+Headless.BackgroundColor3 = Color3.new(0.407843, 0.407843, 0.407843)
+Headless.BorderColor3 = Color3.new(0, 0, 0)
+Headless.BorderSizePixel = 0
+Headless.Position = UDim2.new(0, 0, 0.204918027, 0)
+Headless.Size = UDim2.new(0, 135, 0, 32)
+Headless.Font = Enum.Font.SourceSans
+Headless.Text = "Headless"
+Headless.TextColor3 = Color3.new(0.117647, 0.631373, 0.815686)
+Headless.TextScaled = true
+Headless.TextSize = 14
+Headless.TextWrapped = true
 
 Visible.Name = "Visible"
 Visible.Parent = V2
@@ -249,7 +263,7 @@ TextLabel_4.TextWrapped = true
 
 -- Scripts
 
-local function RRAA_fake_script() -- V2.MainScript 
+local function XLKQZ_fake_script() -- V2.MainScript 
 	local script = Instance.new('LocalScript', V2)
 
 	-- Version 2 made by SlimShady (again)
@@ -274,8 +288,8 @@ local function RRAA_fake_script() -- V2.MainScript
 	menu.Visible = false
 	credits.Visible = true
 end
-coroutine.wrap(RRAA_fake_script)()
-local function WXJVDNG_fake_script() -- ScriptHub.Dragify 
+coroutine.wrap(XLKQZ_fake_script)()
+local function OHNSBY_fake_script() -- ScriptHub.Dragify 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local UIS = game:GetService("UserInputService")
@@ -321,8 +335,8 @@ local function WXJVDNG_fake_script() -- ScriptHub.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(WXJVDNG_fake_script)()
-local function FRCTV_fake_script() -- coolgui.LocalScript 
+coroutine.wrap(OHNSBY_fake_script)()
+local function WSXYGF_fake_script() -- coolgui.LocalScript 
 	local script = Instance.new('LocalScript', coolgui)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -2762,24 +2776,24 @@ local function FRCTV_fake_script() -- coolgui.LocalScript
 		CloseOpen.TextSize = 18
 	end)
 end
-coroutine.wrap(FRCTV_fake_script)()
-local function GGEVKTH_fake_script() -- InfYield.LocalScript 
+coroutine.wrap(WSXYGF_fake_script)()
+local function YYTFKX_fake_script() -- InfYield.LocalScript 
 	local script = Instance.new('LocalScript', InfYield)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(GGEVKTH_fake_script)()
-local function MMKYN_fake_script() -- OwlHub.LocalScript 
+coroutine.wrap(YYTFKX_fake_script)()
+local function OFJVD_fake_script() -- OwlHub.LocalScript 
 	local script = Instance.new('LocalScript', OwlHub)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end)
 end
-coroutine.wrap(MMKYN_fake_script)()
-local function TOIGBWY_fake_script() -- Player.Dragify 
+coroutine.wrap(OFJVD_fake_script)()
+local function WKOE_fake_script() -- Player.Dragify 
 	local script = Instance.new('LocalScript', Player)
 
 	local UIS = game:GetService("UserInputService")
@@ -2825,8 +2839,8 @@ local function TOIGBWY_fake_script() -- Player.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(TOIGBWY_fake_script)()
-local function MODJJAX_fake_script() -- Godmode.LocalScript 
+coroutine.wrap(WKOE_fake_script)()
+local function QKCC_fake_script() -- Godmode.LocalScript 
 	local script = Instance.new('LocalScript', Godmode)
 
 	local status = false
@@ -2848,8 +2862,18 @@ local function MODJJAX_fake_script() -- Godmode.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MODJJAX_fake_script)()
-local function APMH_fake_script() -- V2.Arcane 
+coroutine.wrap(QKCC_fake_script)()
+local function VBPM_fake_script() -- Headless.LocalScript 
+	local script = Instance.new('LocalScript', Headless)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.MouseButton1Down:Connect(function()
+		player.Character.Head.Transparency = 1
+		player.Character.Head.face.Transparency = 1
+	end)
+end
+coroutine.wrap(VBPM_fake_script)()
+local function VOLKCJ_fake_script() -- V2.Arcane 
 	local script = Instance.new('LocalScript', V2)
 
 	print("Welcome to Arcane V2, " .. game.Players.LocalPlayer.DisplayName)
@@ -2865,4 +2889,4 @@ local function APMH_fake_script() -- V2.Arcane
 	notification("Loaded Arcane!")
 	
 end
-coroutine.wrap(APMH_fake_script)()
+coroutine.wrap(VOLKCJ_fake_script)()
