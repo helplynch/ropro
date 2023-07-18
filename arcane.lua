@@ -1,6 +1,7 @@
 --[[
 
-		SlimShady on that gui
+		Fixed i hope
+		Made by SlimShady
 
 ]]
 
@@ -14,6 +15,7 @@ local Credits = Instance.new("Frame")
 local Credits_2 = Instance.new("TextLabel")
 local TextLabel = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
+local HackGui = Instance.new("Frame")
 local ScriptHub = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
@@ -96,12 +98,21 @@ TextLabel.TextWrapped = true
 
 UICorner.Parent = Credits
 
+HackGui.Name = "HackGui"
+HackGui.Parent = InnerFrame
+HackGui.BackgroundColor3 = Color3.new(1, 1, 1)
+HackGui.BackgroundTransparency = 1
+HackGui.BorderColor3 = Color3.new(0, 0, 0)
+HackGui.BorderSizePixel = 0
+HackGui.Position = UDim2.new(0.114675224, 0, 0.0174603183, 0)
+HackGui.Size = UDim2.new(0, 159, 0, 303)
+
 ScriptHub.Name = "ScriptHub"
-ScriptHub.Parent = InnerFrame
+ScriptHub.Parent = HackGui
 ScriptHub.BackgroundColor3 = Color3.new(0.407843, 0.407843, 0.407843)
 ScriptHub.BorderColor3 = Color3.new(0, 0, 0)
 ScriptHub.BorderSizePixel = 0
-ScriptHub.Position = UDim2.new(0.112269461, 0, 0.04920635, 0)
+ScriptHub.Position = UDim2.new(0.0668825507, 0, 0.44906491, 0)
 ScriptHub.Size = UDim2.new(0, 136, 0, 149)
 
 UICorner_2.Parent = ScriptHub
@@ -166,11 +177,11 @@ OwlHub.TextSize = 14
 OwlHub.TextWrapped = true
 
 Player.Name = "Player"
-Player.Parent = InnerFrame
+Player.Parent = HackGui
 Player.BackgroundColor3 = Color3.new(0.407843, 0.407843, 0.407843)
 Player.BorderColor3 = Color3.new(0, 0, 0)
 Player.BorderSizePixel = 0
-Player.Position = UDim2.new(0.243785083, 0, 0.0492063425, 0)
+Player.Position = UDim2.new(0.0660806149, 0, 0.0261040181, 0)
 Player.Size = UDim2.new(0, 136, 0, 117)
 
 UICorner_3.Parent = Player
@@ -263,7 +274,7 @@ TextLabel_4.TextWrapped = true
 
 -- Scripts
 
-local function XLKQZ_fake_script() -- V2.MainScript 
+local function EOUBO_fake_script() -- V2.MainScript 
 	local script = Instance.new('LocalScript', V2)
 
 	-- Version 2 made by SlimShady (again)
@@ -288,55 +299,8 @@ local function XLKQZ_fake_script() -- V2.MainScript
 	menu.Visible = false
 	credits.Visible = true
 end
-coroutine.wrap(XLKQZ_fake_script)()
-local function OHNSBY_fake_script() -- ScriptHub.Dragify 
-	local script = Instance.new('LocalScript', ScriptHub)
-
-	local UIS = game:GetService("UserInputService")
-	local dragSpeed = -math.huge
-	
-	local dragToggle = nil
-	local dragInput = nil
-	local dragStart = nil
-	local dragPos = nil
-	
-	function dragify(Frame)
-		function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        script.Parent.Position = Position
-		end
-		
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-		end)
-		
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-		end)
-		
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
-	
-	dragify(script.Parent)
-end
-coroutine.wrap(OHNSBY_fake_script)()
-local function WSXYGF_fake_script() -- coolgui.LocalScript 
+coroutine.wrap(EOUBO_fake_script)()
+local function LTAAN_fake_script() -- coolgui.LocalScript 
 	local script = Instance.new('LocalScript', coolgui)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -2776,25 +2740,58 @@ local function WSXYGF_fake_script() -- coolgui.LocalScript
 		CloseOpen.TextSize = 18
 	end)
 end
-coroutine.wrap(WSXYGF_fake_script)()
-local function YYTFKX_fake_script() -- InfYield.LocalScript 
+coroutine.wrap(LTAAN_fake_script)()
+local function INZURW_fake_script() -- InfYield.LocalScript 
 	local script = Instance.new('LocalScript', InfYield)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(YYTFKX_fake_script)()
-local function OFJVD_fake_script() -- OwlHub.LocalScript 
+coroutine.wrap(INZURW_fake_script)()
+local function HKBNR_fake_script() -- OwlHub.LocalScript 
 	local script = Instance.new('LocalScript', OwlHub)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 	end)
 end
-coroutine.wrap(OFJVD_fake_script)()
-local function WKOE_fake_script() -- Player.Dragify 
-	local script = Instance.new('LocalScript', Player)
+coroutine.wrap(HKBNR_fake_script)()
+local function ZBZIX_fake_script() -- Godmode.LocalScript 
+	local script = Instance.new('LocalScript', Godmode)
+
+	local status = false
+	script.Parent.MouseButton1Down:Connect(function()
+		function notification(txt)
+			local StarterGui = game:GetService("StarterGui")
+			StarterGui:SetCore("SendNotification",{
+				Title = "Arcane",
+				Text = txt,
+				Duration = 4
+			})
+		end
+		if status == false then
+			status = true
+			notification("Godmode: ON");
+		else
+			status = false
+			notification("Godmode: OFF");
+		end
+	end)
+end
+coroutine.wrap(ZBZIX_fake_script)()
+local function PXPROG_fake_script() -- Headless.LocalScript 
+	local script = Instance.new('LocalScript', Headless)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.MouseButton1Down:Connect(function()
+		player.Character.Head.Transparency = 1
+		player.Character.Head.face.Transparency = 1
+	end)
+end
+coroutine.wrap(PXPROG_fake_script)()
+local function ZRVI_fake_script() -- HackGui.HackDrag 
+	local script = Instance.new('LocalScript', HackGui)
 
 	local UIS = game:GetService("UserInputService")
 	local dragSpeed = -math.huge
@@ -2839,41 +2836,8 @@ local function WKOE_fake_script() -- Player.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(WKOE_fake_script)()
-local function QKCC_fake_script() -- Godmode.LocalScript 
-	local script = Instance.new('LocalScript', Godmode)
-
-	local status = false
-	script.Parent.MouseButton1Down:Connect(function()
-		function notification(txt)
-			local StarterGui = game:GetService("StarterGui")
-			StarterGui:SetCore("SendNotification",{
-				Title = "Arcane",
-				Text = txt,
-				Duration = 4
-			})
-		end
-		if status == false then
-			status = true
-			notification("Godmode: ON");
-		else
-			status = false
-			notification("Godmode: OFF");
-		end
-	end)
-end
-coroutine.wrap(QKCC_fake_script)()
-local function VBPM_fake_script() -- Headless.LocalScript 
-	local script = Instance.new('LocalScript', Headless)
-
-	local player = game.Players.LocalPlayer
-	script.Parent.MouseButton1Down:Connect(function()
-		player.Character.Head.Transparency = 1
-		player.Character.Head.face.Transparency = 1
-	end)
-end
-coroutine.wrap(VBPM_fake_script)()
-local function VOLKCJ_fake_script() -- V2.Arcane 
+coroutine.wrap(ZRVI_fake_script)()
+local function NDZWOUM_fake_script() -- V2.Arcane 
 	local script = Instance.new('LocalScript', V2)
 
 	print("Welcome to Arcane V2, " .. game.Players.LocalPlayer.DisplayName)
@@ -2889,4 +2853,4 @@ local function VOLKCJ_fake_script() -- V2.Arcane
 	notification("Loaded Arcane!")
 	
 end
-coroutine.wrap(VOLKCJ_fake_script)()
+coroutine.wrap(NDZWOUM_fake_script)()
